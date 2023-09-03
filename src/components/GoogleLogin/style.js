@@ -1,0 +1,18 @@
+import { StyleSheet } from 'react-native';
+import { colors } from '../../utils/colors';
+
+export const styles = StyleSheet.create({
+    container:{
+        backgroundColor: colors.darkGray,
+        borderRadius: 14,
+        width: '45%',
+        alignSelf: 'center',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 12
+    },
+    img:{
+        width: 30,
+        height: 30,
+    }
+})
