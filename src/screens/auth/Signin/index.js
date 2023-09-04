@@ -8,13 +8,18 @@ import Seperator from '../../../components/Seperator';
 import GoogleLogin from '../../../components/GoogleLogin';
 
 const Signin = () => {
+
+  const signin = () => {
+    console.log('signin')
+  }
+
   return (
     <ScrollView style={styles.container}>
       <AuthHeader title='Sign In' />
       <Input label='E-mail' placeholder='example@gamil.com'/>
       <Input isPassword label='Password' placeholder='******'/>
 
-      <Button title='Sign In' style={styles.btn} />
+      <Button title='Sign In' style={styles.btn} onPress={signin} />
       <Seperator title='Or sign up with' />
       <GoogleLogin />
 
